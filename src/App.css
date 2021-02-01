@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+@import '../node_modules//bootstrap/dist/css/bootstrap.min.css';
+
+.nav{
+  background-color: black;
+  position: fixed;
+  top: 0;
+  border: 5px solid red;
+  width: 100vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.ecommerce{
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  color: red;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cursor{
+  cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 12px;
 }
-
-.App-link {
-  color: #61dafb;
+.link a:hover{
+  color: red;
+  border-bottom: 4px red solid;
 }
+.product-card{
+  /* position: relative; */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.product-card img{
+  /* position: absolute; */
+  height:200px;
+  width: 280px;
+  display: inline-block;
+}
+.container{
+  position: sticky;
+  top: 0;
+  left: 0;
 }
